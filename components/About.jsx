@@ -12,12 +12,10 @@ const About = () => {
             About
           </p>
           <h2 className='py-4'>Who I Am</h2>
-          <p className='py-2 text-gray-600'>
-            / / I am not your average developer
-          </p>
+          
           <p className='py-2 text-gray-600'>
             I have spent the last year learning how to code and build websites.I possess 
-            Ownership, Responsibility, Learning Capability with positive attitude.I have the 
+            ownership, responsibility, learning Capability with positive attitude.I have the 
             Desire to learn new technologies and resolve problems and issues.I am able to
             to multitask and manage multiple priorities and commitments concurrently with my 
             exceptional time-management skills and the ability to work under pressure.

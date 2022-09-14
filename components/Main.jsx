@@ -13,7 +13,7 @@ const Main = () => {
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className='py-4 text-gray-700'>
-            Hi, I&#39;m <span className='text-[#5651e5]'> Anirudh</span>
+            Hi, I&#39;m <span className='text-[#D92065]'> Anirudh</span>
           </h1>
           <h1 className='py-2 text-gray-700'>A Web Developer</h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
@@ -22,31 +22,31 @@ const Main = () => {
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a
-              href='https://www.linkedin.com/in/clint-briley-50056920a/'
+              href='https://www.linkedin.com/in/gautamanirudh/'
               target='_blank'
               rel='noreferrer'
             >
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-blue-700 ease-in duration-300'>
-                <FaLinkedinIn />
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-[#0B66C3] ease-in duration-300'>
+                <FaLinkedinIn size={20} />
               </div>
             </a>
             <a
-              href='https://github.com/fireclint'
+              href='https://github.com/14anirudh'
               target='_blank'
               rel='noreferrer'
             >
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-black ease-in duration-300'>
-                <FaGithub />
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-gray-500 ease-in duration-300'>
+                <FaGithub size={20} />
               </div>
             </a>
-            <Link href='/#contact'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-red-800 ease-in duration-300'>
-                <AiOutlineMail />
+            <a href="mailto:anirudhgautam987@gmail.com">
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-[#EB4235] ease-in duration-300' mailto>
+                <AiOutlineMail size={20} />
               </div>
-            </Link>
+            </a>
             <Link href='/resume'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-purple-700 ease-in duration-300'>
-                <BsFillPersonLinesFill />
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-[#D92065] ease-in duration-300'>
+                <BsFillPersonLinesFill size={20} />
               </div>
             </Link>
           </div>

@@ -11,6 +11,31 @@
   justify-content: center;
   align-items: center;
 }
+.ul_element {
+  display: inline-block;
+  position: relative;
+  padding: 0px 15px;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+.ul_element:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #D92065;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+.ul_element:hover::after {
+  transform: scaleX(1);
+  /* transform-origin: right top ; */
+  
+}
 
 .footer {
   display: flex;

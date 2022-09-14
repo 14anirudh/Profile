@@ -1,50 +1,50 @@
-import React from 'react';
-import Head from 'next/head';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import React from "react";
+import Head from "next/head";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const resume = () => {
   return (
     <>
       <Head>
-        <title>Clint | Resume</title>
+        <title>Anirudh | Resume</title>
         <meta
-          name='description'
-          content='I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences.'
+          name="description"
+          content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences."
         />
-        <link rel='icon' href='/fav.png' />
+        <link rel="icon" href="/fav.png" />
       </Head>
 
-      <div className='max-w-[940px] mx-auto p-2 pt-[120px]'>
-        <h2 className='text-center'>Resume</h2>
-        <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
-          <h2 className='text-center'>Clint Briley</h2>
-          <div className='flex'>
+      <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
+        <h2 className="text-center">Resume</h2>
+        <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
+          <h2 className="text-center">Anirudh Gautam</h2>
+          <div className="flex">
             <a
-              href='https://www.linkedin.com/in/clint-briley-50056920a/'
-              target='_blank'
-              rel='noreferrer'
+              href="https://www.linkedin.com/in/gautamanirudh/"
+              target="_blank"
+              rel="noreferrer"
             >
-              <FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
+              <FaLinkedinIn size={20} style={{ marginRight: "1rem" }} />
             </a>
             <a
-              href='https://github.com/fireclint'
-              target='_blank'
-              rel='noreferrer'
+              href="https://github.com/14anirudh"
+              target="_blank"
+              rel="noreferrer"
             >
-              <FaGithub size={20} style={{ marginRight: '1rem' }} />
+              <FaGithub size={20} style={{ marginRight: "1rem" }} />
             </a>
           </div>
         </div>
-        <div className='text-center py-4 text-xl font-bold uppercase tracking-wider'>
-          <div className='hidden sm:block'>
+        <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
+          <div className="hidden sm:block">
             <p>
-              Proven Leadership <span className='px-1'>|</span> Web Development{' '}
-              <span className='px-1'>|</span> Complex Problem Solving
+              Proven Leadership <span className="px-1">|</span> Web Development{" "}
+              <span className="px-1">|</span> Complex Problem Solving
             </p>
           </div>
-          <div className='block sm:hidden'>
+          <div className="block sm:hidden">
             <p>Proven Leadership</p>
-            <p className='py-2'>Web Development</p>
+            <p className="py-2">Web Development</p>
             <p>Complex Problem Solving</p>
           </div>
         </div>
@@ -61,117 +61,82 @@ const resume = () => {
         </p>
 
         {/* Skills */}
-        <div className='text-center py-4'>
-          <h5 className='text-center underline text-[18px] py-2'>Skills</h5>
-          <p className='py-2'>
-            <span className='font-bold'>Technical Skills</span>
-            <span className='px-2'>|</span>Front-End Web Developer
-            <span className='px-2'>|</span> HTML <span className='px-2'>|</span>
-            CSS <span className='px-2'>|</span>React
-            <span className='px-2'>|</span>Tailwind
-            <span className='px-2'>|</span> Firebase
+        <div className="text-center py-4">
+          <h5 className="text-center underline text-[18px] py-2">Skills</h5>
+          <p className="py-2 flex flex-wrap justify-center">
+            <span className="font-bold">Web Development</span>
+            <span className="px-2">|</span>HTML
+            <span className="px-2">|</span>CSS
+            <span className="px-2">|</span>JavaScript
+            <span className="px-2">|</span>React
+            <span className="px-2">|</span>Next
+            <span className="px-2">|</span>Node
+            <span className="px-2">|</span>REST APIs
+            <span className="px-2">|</span>Tailwind
           </p>
-          <p className='py-2'>
-            <span className='font-bold'>Amazon Web Services</span>
-            <span className='px-2'>|</span>Amazon Web Services Cloud
-            Practitioner
+          <p className="py-2">
+            <span className="font-bold">Languages</span>
+            <span className="px-2">|</span>Java
+            <span className="px-2">|</span>C++
+          </p>
+          <p className="py-2">
+            <span className="font-bold">Databases</span>
+            <span className="px-2">|</span>MongoDb
+            <span className="px-2">|</span>MySQL
           </p>
         </div>
 
-        <h5 className='text-center underline text-[18px] py-4'>
+        <h5 className="text-center underline text-[18px] py-4">
           Professional Experience
         </h5>
-        {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold italic'>
-              BIGCOMMERCE, SHOPIFY, WOOCOMMERCE
-            </span>
-            <span className='px-2'>|</span>Dallas, TX
+          {/* Experience */}
+        <div className="py-6">
+          <p className="italic">
+            <span className="font-bold">Software Developer</span>
+            <span className="px-2">|</span>Delhi,India
           </p>
-          <p className='py-1 italic'>Freelance Work (2013 - Current)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+          <p className="py-1 italic">
+            Software Development Cell,USICT (05/22 - Present)
+          </p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Ensured comprehensive mobile responsive UI layouts with
-              understanding of HTML, CSS, and JavaScript.
+              Worked with a team of developers in designing and creating College
+              Website.(ipu.ac.in)
+            </li>
+            <li>
+              Collaborated with designers to create clean interfaces and simple,
+              intuitive interactions and experiences.
             </li>
             <li>
               Troubleshoot issues and concerns, configure operation and analytic
               plugins, and design changes as needed.
             </li>
+          </ul>
+        </div>
+        {/* Experience */}
+        <div className="py-6">
+          <p className="italic">
+            <span className="font-bold italic">Full Stack Web Developer</span>
+            <span className="px-2">|</span>Remote
+          </p>
+          <p className="py-1 italic">Outshade Digital Media (06/22 - 08/22)</p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+            <li>
+              Developed 10 modules of an IAM Application for PowerGrid
+              Corporation of India.
+            </li>
+            <li>
+              Build APIs using RESTful standards for storing and displaying data
+              and Integrated fronted with backend using REST APIs.
+            </li>
+
             <li>
               Worked directly with a diverse client base to understand and
               implement multiple technologies and programs.
             </li>
-            <li>
-              Platform migration managing DNS servers as well as MX records and
-              ensuring a smooth migration process.
-            </li>
           </ul>
         </div>
-        {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold'>Preston EMS</span>
-            <span className='px-2'>|</span>Grayson County, TX
-          </p>
-          <p className='py-1 italic'>Paramedic (2019 - Current)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Lead paramedic on an ALS 911 ambulance covering rural Grayson
-              County.
-            </li>
-            <li>
-              Work surrounding departments organizing treatment protocols and
-              facilitate hands on training operations.
-            </li>
-            <li>
-              Manage high stress 911 situations such as medical emergencies,
-              traumatic emergencies, and water accidents
-            </li>
-            <li>
-              Public outreach and relations for the municipality from healthcare
-              awareness to training methods.
-            </li>
-          </ul>
-        </div>
-        {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold'>CITY OF SHERMAN, TX</span>
-            <span className='px-2'>|</span>Sherman, TX
-          </p>
-          <p className='py-1 italic'>Paramedic / Firefighter (2010 – 2019)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Ensured proper implementation of firefighting techniques and
-              practices including controlling and extinguishing fires, operating
-              hose lines, and fire ground operations, ventilation, and search
-              and rescue.
-            </li>
-            <li>
-              Oversaw comprehensive understanding, operation, and maintenance of
-              fire engines, ladder trucks, technical rescue apparatus, and
-              response trailers.
-            </li>
-            <li>
-              Performed ALS techniques as needed within emergency situations
-              including the use of an esophageal or dual lumen airway device and
-              oral intubation using laryngoscopy.
-            </li>
-            <li>
-              Collaborated with a talented and high performing team of
-              firefighters in high pressure and stressful situations as needed.
-            </li>
-            <li>
-              Utilized proven and demonstrated knowledge of multiple
-              certifications including Pediatric Advanced Life Support,
-              Prehospital Trauma Life Support, and Advanced Cardiac Life
-              Support, among others.
-            </li>
-          </ul>
-        </div>
-      </div>
+       </div>
     </>
   );
 };
