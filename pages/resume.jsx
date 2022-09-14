@@ -89,7 +89,7 @@ const resume = () => {
         <h5 className="text-center underline text-[18px] py-4">
           Professional Experience
         </h5>
-          {/* Experience */}
+        {/* Experience */}
         <div className="py-6">
           <p className="italic">
             <span className="font-bold">Software Developer</span>
@@ -136,7 +136,7 @@ const resume = () => {
             </li>
           </ul>
         </div>
-       </div>
+      </div>
     </>
   );
 };
