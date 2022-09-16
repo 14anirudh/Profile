@@ -26,7 +26,7 @@ const twitch = () => {
         <div className="col-span-4">
           <h2> Project Overview</h2>
           <p>
-            This appplication was built using NEXT.JS and is styled with
+            This application was built using NEXT.JS and is styled with
             Tailwind CSS. The application is hosted statically using Heroku.
             This is a mobile responsive Blog website which features technical
             blogs. I have enabled static site generation for this website so
