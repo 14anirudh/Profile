@@ -21,9 +21,14 @@ const Navbar = () => {
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
+        setNavBg("#374151");
         setShadow(true);
+        setLinkColor("#ecf0f3");
       } else {
         setShadow(false);
+        setNavBg("#ecf0f3");
+        setLinkColor("#1f2937");
+        
       }
     };
     window.addEventListener("scroll", handleShadow);
@@ -34,7 +39,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 "
           : "fixed w-full h-20 z-[100]"
       }
     >
