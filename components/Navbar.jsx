@@ -44,19 +44,23 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 ">
         <div className="pt-2">
-        <Link href="/">
-          <a>
-            <Image
-              src={NavLogo}
-              alt="/"
-              width="125"
-              height="65"
-              className={shadow? "cursor-pointer object-contain invert":"cursor-pointer object-contain"}
-            />
-          </a>
-        </Link>
+          <Link href="/">
+            <a>
+              <Image
+                src={NavLogo}
+                alt="/"
+                width="125"
+                height="65"
+                className={
+                  shadow
+                    ? "cursor-pointer object-contain invert"
+                    : "cursor-pointer object-contain"
+                }
+              />
+            </a>
+          </Link>
         </div>
-        
+
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex pr-2">
             <li className={styles.ul_element}>
@@ -104,22 +108,27 @@ const Navbar = () => {
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
-          <div>
-            <div className="flex w-full items-center justify-between">
-              <Link href="/">
-                <a>
-                 
-                  <Image src={NavLogo} width="150" height="50" alt="/" className="object-contain"/>
-                  <p className="px-1 font-semibold text-[#003140]">Code | Build | Learn</p>
-               
-                </a>
-              </Link>
-              <div
-                onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+          <div onClick={handleNav}
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer bg-[#003140] text-[#FFFFFF] absolute right-5 top-5"
               >
                 <AiOutlineClose />
-              </div>
+              </div> 
+          <div>
+            <div className="flex w-full items-center justify-center">
+              <Link href="/">
+                <a>
+                  <Image
+                    src={NavLogo}
+                    width="150"
+                    height="50"
+                    alt="/"
+                    className="object-contain"
+                  />
+                  <p className="px-1 font-semibold text-[#003140]">
+                    Code | Build | Learn
+                  </p>
+                </a>
+              </Link>
             </div>
             <div className="border-b border-gray-300 my-4">
               <p className="w-[100%] md:w-[90%] py-4 text-center font-semibold text-[#003140]">
@@ -130,32 +139,50 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-2 font-semibold text-[#003140] text-center"
+                >
                   Home
                 </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-2 font-semibold text-[#003140] text-center"
+                >
                   About
                 </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-2 font-semibold text-[#003140] text-center"
+                >
                   Skills
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-2 font-semibold text-[#003140] text-center"
+                >
                   Projects
                 </li>
               </Link>
               <Link href="/resume">
-                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-2 font-semibold text-[#003140] text-center"
+                >
                   Resume
                 </li>
               </Link>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-2 font-semibold text-[#003140] text-center"
+                >
                   Contact
                 </li>
               </Link>
@@ -209,3 +236,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+/*
+<div onClick={handleNav}
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+              >
+                <AiOutlineClose />
+              </div>*/
