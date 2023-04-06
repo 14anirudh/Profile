@@ -12,10 +12,10 @@ const Main = () => {
           <p className='uppercase text-sm tracking-widest text-gray-600'>
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
-          <h1 className='py-4 text-gray-700'>
+          <h1 className='py-4 text-[#003140]'>
             Hi, I&#39;m <span className='text-[#D92065]'> Anirudh</span>
           </h1>
-          <h1 className='py-2 text-gray-700'>A Software Developer</h1>
+          <h1 className='py-2 text-[#003140]'>A Software Developer</h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
             I’m focused on building responsive front-end web applications while
             learning back-end technologies.

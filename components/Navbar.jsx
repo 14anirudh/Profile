@@ -12,7 +12,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [linkColor, setLinkColor] = useState("#003140");
 
   const handleNav = () => {
     setNav(!nav);
@@ -21,14 +21,13 @@ const Navbar = () => {
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
-        setNavBg("#374151");
+        setNavBg("#003140");
         setShadow(true);
-        setLinkColor("#ecf0f3");
+        setLinkColor("#FFFFFF");
       } else {
         setShadow(false);
         setNavBg("#ecf0f3");
-        setLinkColor("#1f2937");
-        
+        setLinkColor("#003140");
       }
     };
     window.addEventListener("scroll", handleShadow);
@@ -44,17 +43,20 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 ">
+        <div className="pt-2">
         <Link href="/">
           <a>
             <Image
               src={NavLogo}
               alt="/"
               width="125"
-              height="50"
-              className="cursor-pointer object-contain"
+              height="65"
+              className={shadow? "cursor-pointer object-contain invert":"cursor-pointer object-contain"}
             />
           </a>
         </Link>
+        </div>
+        
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex pr-2">
             <li className={styles.ul_element}>
@@ -106,7 +108,10 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <Link href="/">
                 <a>
-                  <Image src={NavLogo} width="87" height="35" alt="/" />
+                 
+                  <Image src={NavLogo} width="150" height="50" alt="/" className="object-contain"/>
+                  <p className="px-1 font-semibold text-[#003140]">Code | Build | Learn</p>
+               
                 </a>
               </Link>
               <div
@@ -117,46 +122,46 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
-                Let&#39;s build something legendary together
+              <p className="w-[100%] md:w-[90%] py-4 text-center font-semibold text-[#003140]">
+                Let&#39;s build something together
               </p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm-bold">
+                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
                   Home
                 </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm-bold">
+                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
                   About
                 </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm-bold">
+                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
                   Skills
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm-bold">
+                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
                   Projects
                 </li>
               </Link>
               <Link href="/resume">
-                <li onClick={() => setNav(false)} className="py-4 text-sm-bold">
+                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
                   Resume
                 </li>
               </Link>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm-bold">
+                <li onClick={() => setNav(false)} className="py-2 font-semibold text-[#003140] text-center">
                   Contact
                 </li>
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-[#003140]">
                 Let&#39;s Connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm-bold:w-[80%]">
