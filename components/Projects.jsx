@@ -23,16 +23,16 @@ const Projects = () => {
             tech="React JS"
           />
           <ProjectItem
+            title="E-commerce Store"
+            backgroundImg={amazonImg}
+            projectUrl="/amazon-clone"
+            tech="Next JS"
+          />
+          <ProjectItem
             title="Blog Website"
             backgroundImg={blogImg}
             projectUrl="/blog"
             tech="Next JS"
-          />
-          <ProjectItem
-            title="Amazon Clone"
-            backgroundImg={amazonImg}
-            projectUrl="/amazon-clone"
-            tech="React JS"
           />
           
         </div>

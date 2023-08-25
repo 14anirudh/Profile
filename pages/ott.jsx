@@ -24,13 +24,15 @@ const netflix = () => {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
-         <h2 className="my-3">Project Overview</h2>
+          <h2 className="my-3">Project Overview</h2>
           <p>
             I built this application in React JS and is hosted on Heroku. This
             app features user authentication with firebase .This application is
-            pulling movie data from the IMDB movie API and displaying
-            different categories. It features horizontal sliding and a featured
-            selection. This app is fully responsive and works on all devices.
+            pulling movie data from the TMDB movie API.
+            Enabled user authentication functionality through Firebase.
+            Implemented secure payment gateway integration through Stripe It
+            features horizontal sliding and a featured selection. This app is
+            fully responsive and works on all devices.
           </p>
           <a
             href="https://github.com/14anirudh/OTT-Platform"
@@ -39,11 +41,7 @@ const netflix = () => {
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
-          <a
-            href="https://ottwebapp.herokuapp.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://ott-pt.vercel.app/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4">Demo</button>
           </a>
         </div>
