@@ -4,7 +4,7 @@ import amazonImg from "../public/assets/projects/amazon.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const crypto = () => {
+const Commerce = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -77,4 +77,4 @@ const crypto = () => {
   );
 };
 
-export default crypto;
+export default Commerce;

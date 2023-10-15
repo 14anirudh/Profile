@@ -5,6 +5,7 @@ import React from "react";
 import netflixImg from "../public/assets/projects/netflix.png";
 import blogImg from "../public/assets/projects/blog.png";
 import amazonImg from "../public/assets/projects/amazon.png";
+import scraper_img from "../public/assets/projects/scraper.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -16,23 +17,29 @@ const Projects = () => {
         </p>
         <h2 className="py-4 font-normal text-3xl">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem
+        <ProjectItem
             title="OTT App"
             backgroundImg={netflixImg}
             projectUrl="/ott"
-            tech="React JS"
+            tech="React JS / Firebase / Stripe / Tailwind"
+          />
+          <ProjectItem
+            title="Web Scraper"
+            backgroundImg={scraper_img}
+            projectUrl="/Scraper"
+            tech="NextJS / Web Scraping / Tailwind / MongoDb"
           />
           <ProjectItem
             title="E-commerce Store"
             backgroundImg={amazonImg}
             projectUrl="/amazon-clone"
-            tech="Next JS"
+            tech="NextJS / JWT / MongoDb /Stripe / Tailwind"
           />
           <ProjectItem
             title="Blog Website"
             backgroundImg={blogImg}
             projectUrl="/blog"
-            tech="Next JS"
+            tech="Next JS / Tailwind / REST APIs"
           />
           
         </div>

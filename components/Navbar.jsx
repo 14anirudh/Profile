@@ -3,9 +3,9 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFillPersonLinesFill, BsGear } from "react-icons/bs";
 // import { useRouter } from 'next/router';
-import NavLogo from "../public/assets/navLogo.png";
+import NavLogo from "../public/assets/nav.gif";
 import styles from "../styles/Home.module.css";
 
 const Navbar = () => {
@@ -51,11 +51,7 @@ const Navbar = () => {
                 alt="/"
                 width="125"
                 height="65"
-                className={
-                  shadow
-                    ? "cursor-pointer object-contain invert"
-                    : "cursor-pointer object-contain"
-                }
+                className="cursor-pointer object-contain invert"
               />
             </a>
           </Link>

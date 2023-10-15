@@ -13,12 +13,13 @@ const Main = () => {
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className='py-4 text-[#003140]'>
-            Hi, I&#39;m <span className='text-[#D92065]'> Anirudh</span>
+            Hi, I&#39;m <span className='text-[#a0354e]'> Anirudh Gautam</span>
           </h1>
           <h1 className='py-2 text-[#003140]'>A Software Developer</h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
-            I’m focused on building responsive front-end web applications while
-            learning back-end technologies.
+            I’m focused on building (and occasionally designing) exceptional  
+            digital experiences. Currently, I’m pursuing my Bachelor’s degree in
+            Computer Science.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a
@@ -45,7 +46,7 @@ const Main = () => {
               </div>
             </a>
             <Link href='/resume'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-[#D92065] ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-[#c7d654] ease-in duration-300'>
                 <BsFillPersonLinesFill size={20} />
               </div>
             </Link>

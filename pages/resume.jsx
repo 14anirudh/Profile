@@ -92,11 +92,34 @@ const resume = () => {
         {/* Experience */}
         <div className="py-6">
           <p className="italic">
+            <span className="font-bold italic">Full Stack Web Developer</span>
+            <span className="px-2">|</span>Remote
+          </p>
+          <p className="py-1 italic">Outshade Digital Media (06/22 - 09/22)</p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+            <li>
+              Developed modules of an Internal Application for PowerGrid
+              Corporation of India.
+            </li>
+            <li>
+              Build APIs using RESTful standards for storing and displaying data
+              and Integrated fronted with backend using REST APIs.
+            </li>
+
+            <li>
+              Worked directly with a diverse client base to understand and
+              implement multiple technologies and programs.
+            </li>
+          </ul>
+        </div>
+        {/* Experience */}
+        <div className="py-6">
+          <p className="italic">
             <span className="font-bold">Software Developer</span>
             <span className="px-2">|</span>Delhi,India
           </p>
           <p className="py-1 italic">
-            Software Development Cell,USICT (05/22 - Present)
+            Software Development Cell,USICT (12/21 - 05/22)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
@@ -113,29 +136,8 @@ const resume = () => {
             </li>
           </ul>
         </div>
-        {/* Experience */}
-        <div className="py-6">
-          <p className="italic">
-            <span className="font-bold italic">Full Stack Web Developer</span>
-            <span className="px-2">|</span>Remote
-          </p>
-          <p className="py-1 italic">Outshade Digital Media (06/22 - 08/22)</p>
-          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
-            <li>
-              Developed 10 modules of an IAM Application for PowerGrid
-              Corporation of India.
-            </li>
-            <li>
-              Build APIs using RESTful standards for storing and displaying data
-              and Integrated fronted with backend using REST APIs.
-            </li>
-
-            <li>
-              Worked directly with a diverse client base to understand and
-              implement multiple technologies and programs.
-            </li>
-          </ul>
-        </div>
+        
+        
       </div>
     </>
   );
