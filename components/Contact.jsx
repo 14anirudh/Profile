@@ -15,10 +15,10 @@ const Contact = () => {
           Contact
         </p>
         <h2 className="py-4 font-normal text-3xl">Get In Touch</h2>
-        <div className="grid lg:grid-cols-5 gap-8">
+        <div className="lg:grid-cols-5 gap-8 flex justify-center">
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
-            <div className="lg:p-4 h-full ">
+            <div className="lg:p-4 h-full text-center">
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
@@ -26,7 +26,7 @@ const Contact = () => {
                   alt="/"
                 />
               </div>
-              <div>
+              <div className="text-center">
                 <h2 className="py-2">Anirudh Gautam</h2>
                 <p>Software Engineer</p>
                 <p className="py-4">
@@ -35,40 +35,45 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
-                <div className="flex items-center justify-between py-4">
+                <p className="uppercase py-4 text-center text-2xl">Connect With Me</p>
+                <div className="flex items-center justify-evenly py-4">
                   <a
                     href="https://www.linkedin.com/in/gautamanirudh/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-blue-700 ease-in duration-300">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-blue-700 ease-in duration-300 mb-4">
                       <FaLinkedinIn />
                     </div>
+                    <span>LinkedIn</span>
+
                   </a>
                   <a
                     href="https://github.com/14anirudh"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-black ease-in duration-300">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-black ease-in duration-300 mb-4">
                       <FaGithub />
                     </div>
+                    <span>Github</span>
                   </a>
 
                   <a href="mailto:anirudhgautam987@gmail.com">
                     <div
-                      className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-[#EB4235] ease-in duration-300"
+                      className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-[#EB4235] ease-in duration-300 mb-4"
                       mailto
                     >
                       <AiOutlineMail size={20} />
                     </div>
+                    <span>E-mail</span>
                   </a>
                   <Link href="/resume">
                     <a>
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-pink-700 ease-in duration-300">
+                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-pink-700 ease-in duration-300 mb-4">
                         <BsFillPersonLinesFill />
                       </div>
+                      <span>Resume</span>
                     </a>
                   </Link>
                 </div>
@@ -77,7 +82,7 @@ const Contact = () => {
           </div>
 
           {/* right */}
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          {/* <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form
                 action="https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060"
@@ -133,7 +138,7 @@ const Contact = () => {
                 </button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
